@@ -5,7 +5,7 @@ Created a simple minecraft module with the organised code following roles and pr
 
 I have setup virtual box running Centos7 managed by vegrance to install and start with Puppet master. 
 
-## Steps to install: 
+## Steps to install Vagrant: 
 Make sure system has VirtualBox with Virtual media Manager
 
 For Windows, 
@@ -49,6 +49,21 @@ To coonect to ssh: `vagrant ssh`
 Lets switch to root with: `sudo su -`
 
 default username and password would be : `Vagrant` . But keep public_key in .vagrant folder handy to log in to ssh.
+
+##  Puppetserver Setup
+
+Install puppet from any of the relese at: https://yum.puppetlabs.com/
+With command        : `yum install <link to the release>`
+
+I used r10k module to in gem to link my git with server code.
+
+To start server     : `systemctl start puppetserver`
+
+To stop             : `systemctl start puppetserver`
+
+To check status     : `systemctl status puppetserver`
+
+To start my agent   : `puppet agent -p`
 
 
 
