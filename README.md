@@ -1,5 +1,5 @@
 # Control_repo
-##Learning Configuration Management tool
+## Learning Configuration Management tool
 
 Created a simple minecraft module with the organised code following roles and profiles pattern.
 
